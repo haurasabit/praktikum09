@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas pertemuan 9 - JavaScript</title>
+</head>
+<body>
+    <h1>Menghitung Jumlah Dua Bilangan</h1> <hr> <br><br>
+
+    <input type="number" id="bil1" onchange="hitungbil()">
+    <p> + </p>
+    <input type="number" id="bil2" onchange="hitungbil()">
+
+    <p> =  <span id="hasil"></span></p>
+
+
+    <script>
+        function hitungbil(){
+            let bil1 = parseInt (document.getElementById("bil1").value);
+            let bil2 = parseInt (document.getElementById("bil2").value);
+
+        let hasil = parseInt(bil1 + bil2) ;
+        document.getElementById("hasil").innerHTML = hasil;
+        }
+    </script>
+    
+</body>
+</html>
